@@ -6,7 +6,7 @@ authors = ["yogh333"]
 
 [dependencies]
 nanos_sdk = { git = "https://github.com/yogh333/ledger-nanos-sdk.git", branch = "ecc-pubkey-getter" }
-nanos_ui = { git = "https://github.com/LedgerHQ/ledger-nanos-ui.git", branch = "updated-ledger-nanos-sdk" }
+nanos_ui = { git = "https://github.com/yogh333/ledger-nanos-ui.git", branch = "updated-ledger-nanos-sdk" }
 
 [profile.dev]
 panic = "abort"
