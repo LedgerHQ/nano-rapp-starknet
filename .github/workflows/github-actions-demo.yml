@@ -12,5 +12,6 @@ jobs:
         run: cargo ledger nanos
       - name: Upload app binary
         uses: actions/upload-artifact@v3
-          with: artifact
-          path: target/nanos/release/nano-app-starknet
+          with: 
+            name: elfs
+            path: target/nanos/release/nano-app-starknet
