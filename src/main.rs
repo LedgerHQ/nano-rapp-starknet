@@ -117,6 +117,7 @@ fn handle_apdu(comm: &mut io::Comm, ins: Ins) -> Result<(), Reply> {
             let data = comm.get_data()?;
             let pubkey = get_pubkey(data).unwrap();
             let key = pubkey.to_bytes();
+            comm.append([key.len() as u8].as_slice());
             comm.append(&key)
         }
         Ins::Sign => {
